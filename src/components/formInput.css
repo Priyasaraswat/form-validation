@@ -1,0 +1,32 @@
+.form-input{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+.form-input>label{
+    font-size: 0.8rem;
+    color: rgb(121, 121, 121);
+    margin-bottom: 0.3rem;
+}
+.form-input>input{
+     width:100%;
+     padding:0.5rem;
+     border: 1px solid grey;
+     border-radius: 5px;
+     font-size: 0.9rem;
+     color:grey;
+}
+.form-input>input:focus{
+    outline: none;
+}
+.form-input>span{
+    font-size: 0.74rem;
+    color:red;
+    display: none;
+}
+.form-input>:invalid[blured="true"]{
+    border:1px solid red;
+}
+.form-input>:invalid[blured="true"] ~ span{
+    display: block;
+}
